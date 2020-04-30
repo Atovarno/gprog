@@ -69,27 +69,7 @@ def document(message):
     bot.send_document(owner, message.document.file_id)
     bot.send_message(message.chat.id, str(message.from_user.first_name) + ',' + ' спасибо! :)')
 
-# bot.send_message(config.owner, 'Найдено администраторов бота: <b>2</b>', parse_mode='html')
-# bot.send_message(config.owner, 'Администратор №1 - @amir_foreverornever', parse_mode='html')
-# bot.send_message(config.owner, 'Worker <b>#1</b> был запущен!', parse_mode='html')
-# bot.send_message(config.owner, 'Worker <b>#2</b> был запущен!', parse_mode='html')
-# bot.send_message(config.owner, 'Worker <b>#3</b> был запущен!', parse_mode='html')
-# bot.send_message(config.owner, 'Worker <b>#4</b> был запущен!', parse_mode='html')
-# bot.send_message(config.owner, 'Worker <b>#5</b> был запущен!', parse_mode='html')
-# bot.send_message(config.owner, 'Есть сообщения в очереди!', parse_mode='html')
-# bot.send_message(config.owner, 'Сообщений в очереди:', parse_mode='html')
-# bot.send_message(config.owner, random.randint(1,200))
-# bot.send_message(config.owner, 'Вся служебная информация была доставлена администратору @amir_foreverornever!', parse_mode='html')
 
-
-# @bot.message_handler(content_types=['new_chat_member'])
-# def bot_users_new(msg):
-#	try:
-#		bot.send_message(468437664, 'test')
-#		bot.send_message(message.from_user.chat.id, 'ttttt')
-#		bot.leave_chat(c.message.chat.id)
-#	except:
-#		bot.send_message(468437664, 'Что-то пошло не так! Ошибка в:\n\n' + "<code>@bot.message_handler(content_types=['new_chat'])\ndef bot_users_new(msg):</code>")
 if __name__ == '__main__':
     bot.polling(none_stop=True)
 
